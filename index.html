@@ -62,7 +62,7 @@
         <div class="logo p-4 w-xs font-bold">
           <a href="/">Special Design</a>
         </div>
-        <ul class="links flex flex-row gap-5 p-4">
+        <ul class="links flex flex-col sm:flex-row gap-5 p-4">
           <li><a href="#" class="active-link">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Products</a></li>
@@ -85,12 +85,10 @@
     <!-- about -->
     <div class="container mx-auto py-10">
       <div
-        class="about-section flex flex-col sm:flex-row text-center sm:text-left"
+        class="about-section flex flex-col sm:flex-row text-center sm:text-left items-center"
       >
         <div class="about-text flex-1 p-4">
-          <h2 class="font-bold text-[30px] mt-10 text-(--main-color)">
-            About Us
-          </h2>
+          <h2 class="font-bold text-[30px] text-(--main-color)">About Us</h2>
           <p class="mt-5 text-gray-500 leading-[1.8]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
             quo obcaecati perspiciatis veritatis perferendis corrupti quaerat
@@ -103,6 +101,75 @@
         </div>
       </div>
     </div>
+
+    <!-- skills -->
+    <div class="skills-section bg-gray-100 py-15">
+      <div class="container mx-auto">
+        <h2 class="text-center text-(--main-color) font-bold text-[30px] mb-10">
+          Our Skills
+        </h2>
+        <div class="skills bg-white p-10 rounded-lg shadow-lg">
+          <div class="skill flex items-center gap-2 p-4">
+            <h4>Html</h4>
+            <div
+              class="skill-bar w-full h-[30px] bg-gray-100 relative rounded-lg overflow-hidden"
+            >
+              <span
+                data-progress="90%"
+                class="bg-(--main-color) absolute top-0 left-0 h-full z-2 transition-all duration-300"
+              ></span>
+            </div>
+          </div>
+          <div class="skill flex items-center gap-2 p-4">
+            <h4>Css</h4>
+            <div
+              class="skill-bar w-full h-[30px] bg-gray-100 relative rounded-lg overflow-hidden"
+            >
+              <span
+                data-progress="85%"
+                class="bg-(--main-color) absolute top-0 left-0 h-full z-2 transition-all duration-300"
+              ></span>
+            </div>
+          </div>
+          <div class="skill flex items-center gap-2 p-4">
+            <h4>Javascript</h4>
+            <div
+              class="skill-bar w-full h-[30px] bg-gray-100 relative rounded-lg overflow-hidden"
+            >
+              <span
+                data-progress="80%"
+                class="bg-(--main-color) absolute top-0 left-0 h-full z-2 transition-all duration-300"
+              ></span>
+            </div>
+          </div>
+          <div class="skill flex items-center gap-2 p-4">
+            <h4>Typescript</h4>
+            <div
+              class="skill-bar w-full h-[30px] bg-gray-100 relative rounded-lg overflow-hidden"
+            >
+              <span
+                data-progress="80%"
+                class="bg-(--main-color) absolute top-0 left-0 h-full z-2 transition-all duration-300"
+              ></span>
+            </div>
+          </div>
+          <div class="skill flex items-center gap-2 p-4">
+            <h4>Angular</h4>
+            <div
+              class="skill-bar w-full h-[30px] bg-gray-100 relative rounded-lg overflow-hidden"
+            >
+              <span
+                data-progress="85%"
+                class="bg-(--main-color) absolute top-0 left-0 h-full z-2 transition-all duration-300"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div class="mt-100"></div>
 
     <script src="js/main.js"></script>
   </body>

@@ -96,3 +96,19 @@ randomBg.forEach((span) => {
     }
   });
 });
+
+// skills ------------------------------------------------------------
+
+let skills = document.querySelector(".skills");
+let spans = document.querySelectorAll(".skills .skill span");
+
+window.onscroll = function () {
+  if (
+    window.scrollY >=
+    skills.offsetTop + skills.offsetHeight - window.innerHeight
+  ) {
+    spans.forEach((span) => {
+      span.style.width = span.dataset.progress;
+    });
+  }
+};
