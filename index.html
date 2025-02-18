@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/image/snowflake-solid.svg" />
+    <title>special-design</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- settings -->
+    <div
+      class="settings fixed top-0 -left-55 z-100 w-55 bg-white min-h-screen transition-all duration-300"
+    >
+      <div
+        class="gear-icon bg-white absolute top-20 -right-10 p-3 cursor-pointer"
+      >
+        <i class="fa-solid fa-gear"></i>
+      </div>
+      <div class="settings-container">
+        <div class="settings-colors px-4 py-5 text-center bg-gray-200">
+          <h4 class="mb-5 text-lg font-bold">Colors</h4>
+          <ul
+            class="colors-list text-center p-0 m-0 flex flex-row justify-center gap-2"
+          >
+            <li class="active-color bg-[#0FC2C0]" data-color="#0FC2C0"></li>
+            <li class="bg-[#0CABA8]" data-color="#0CABA8"></li>
+            <li class="bg-[#008F8C]" data-color="#008F8C"></li>
+            <li class="bg-[#015958]" data-color="#015958"></li>
+            <li class="bg-[#023535]" data-color="#023535"></li>
+          </ul>
+        </div>
+        <div class="settings-bg px-4 py-5 text-center bg-gray-200 mt-2">
+          <h4 class="mb-5 font-bold">Random Backgrounds</h4>
+          <div class="random-bg">
+            <span
+              class="active-bg bg-[#015958] text-white px-3 py-1 rounded-md opacity-50 w-15 inline-block cursor-pointer"
+              data-background="yes"
+              >Yes</span
+            >
+            <span
+              class="bg-[#015958] text-white px-3 py-1 rounded-md opacity-50 w-15 inline-block cursor-pointer"
+              data-background="no"
+              >No</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- landing -->
+    <div class="landing min-h-screen">
+      <div
+        class="overlay w-full h-full absolute top-0 left-0 bg-black/50 z-1"
+      ></div>
+      <nav
+        class="container mx-auto relative z-2 text-white flex justify-between items-center"
+      >
+        <div class="logo p-4 w-xs font-bold">
+          <a href="/">Special Design</a>
+        </div>
+        <ul class="links flex flex-row gap-5 p-4">
+          <li><a href="#" class="active-link">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div
+        class="intro-text absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-2 text-white"
+      >
+        <h1 class="text-4xl font-bold mb-5">
+          Welcome To The <span class="text-(--main-color)">Special</span> Design
+        </h1>
+        <p class="text-lg mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div class="container mx-auto py-10">
+      <div
+        class="about-section flex flex-col sm:flex-row text-center sm:text-left"
+      >
+        <div class="about-text flex-1 p-4">
+          <h2 class="font-bold text-[30px] mt-10 text-(--main-color)">
+            About Us
+          </h2>
+          <p class="mt-5 text-gray-500 leading-[1.8]">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+            quo obcaecati perspiciatis veritatis perferendis corrupti quaerat
+            recusandae ut, temporibus soluta quisquam placeat illo est odio a
+            non cumque exercitationem unde?
+          </p>
+        </div>
+        <div class="about-img flex-1 flex justify-center items-center">
+          <img src="image/about.png" alt="about" />
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
