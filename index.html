@@ -13,10 +13,10 @@
   <body>
     <!-- settings -->
     <div
-      class="settings fixed top-0 -left-55 z-100 w-55 bg-white min-h-screen transition-all duration-300"
+      class="settings fixed top-0 -left-55 z-100 w-55 bg-white min-h-screen transition-all duration-300 border border-solid border-(--main-color)"
     >
       <div
-        class="gear-icon bg-white absolute top-20 -right-10 p-3 cursor-pointer"
+        class="gear-icon bg-white absolute top-20 -right-[41px] p-3 cursor-pointer"
       >
         <i class="fa-solid fa-gear"></i>
       </div>
@@ -30,7 +30,7 @@
             <li class="bg-[#0CABA8]" data-color="#0CABA8"></li>
             <li class="bg-[#008F8C]" data-color="#008F8C"></li>
             <li class="bg-[#015958]" data-color="#015958"></li>
-            <li class="bg-[#023535]" data-color="#023535"></li>
+            <li class="bg-[#0BE07C]" data-color="#0BE07C"></li>
           </ul>
         </div>
         <div class="settings-bg px-4 py-5 text-center bg-gray-200 mt-2">
@@ -50,6 +50,27 @@
         </div>
       </div>
     </div>
+    <!-- bullets -->
+    <div class="bullets fixed right-[30px] top-1/2 flex flex-col gap-4 z-500">
+      <div class="bullet" data-section=".about-section">
+        <div class="bullet-tooltip">About Us</div>
+      </div>
+      <div class="bullet" data-section=".skills-section">
+        <div class="bullet-tooltip">Our Skills</div>
+      </div>
+      <div class="bullet" data-section=".gallery">
+        <div class="bullet-tooltip">Our Gallery</div>
+      </div>
+      <div class="bullet" data-section=".timeline-section">
+        <div class="bullet-tooltip">Timeline</div>
+      </div>
+      <div class="bullet" data-section=".features">
+        <div class="bullet-tooltip">Features</div>
+      </div>
+      <div class="bullet" data-section=".testimonials">
+        <div class="bullet-tooltip">Testimonials</div>
+      </div>
+    </div>
 
     <!-- landing -->
     <div class="landing min-h-screen">
@@ -63,10 +84,12 @@
           <a href="/">Special Design</a>
         </div>
         <ul class="links flex flex-col sm:flex-row gap-5 p-4">
-          <li><a href="#" class="active-link">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" data-section=".about-section">About</a></li>
+          <li><a href="#" data-section=".skills-section">Skills</a></li>
+          <li><a href="#" data-section=".gallery">Gallery</a></li>
+          <li><a href="#" data-section=".timeline-section">Timeline</a></li>
+          <li><a href="#" data-section=".features">Features</a></li>
+          <li><a href="#" data-section=".testimonials">Testimonials</a></li>
         </ul>
       </nav>
       <div
@@ -168,8 +191,237 @@
       </div>
     </div>
 
-    <!-- services -->
-    <div class="mt-100"></div>
+    <!-- gallery -->
+    <div class="gallery">
+      <div class="container mx-auto py-10">
+        <h2 class="text-center text-(--main-color) font-bold text-[30px] mb-10">
+          Our Gallery
+        </h2>
+        <div class="images-container flex flex-wrap justify-center">
+          <img src="image/01.jpg" alt="img one" />
+          <img src="image/02.jpg" alt="img two" />
+          <img src="image/03.jpg" alt="img three" />
+          <img src="image/04.jpg" alt="img four" />
+          <img src="image/05.jpg" alt="img five" />
+          <img src="image/06.jpg" alt="img six" />
+          <img src="image/07.jpg" alt="img seven" />
+          <img src="image/08.jpg" alt="img eight" />
+          <img src="image/09.jpg" alt="img nine" />
+          <img src="image/10.jpg" alt="img ten" />
+        </div>
+      </div>
+    </div>
+
+    <!-- timeline -->
+    <div class="timeline-section py-10 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-center text-(--main-color) font-bold text-[30px] mb-10">
+          Timeline
+        </h2>
+        <div class="timeline-content relative overflow-hidden">
+          <div
+            class="year my-[20px] mx-auto w-[50px] bg-(--main-color) text-center relative z-2 text-white rounded-sm py-[2px] px-[5px] font-bold"
+          >
+            2023
+          </div>
+          <div class="left float-left relative">
+            <div class="content p-[20px] bg-white relative">
+              <h3 class="font-bold text-(--main-color) mb-[10px]">
+                Testing Heading
+              </h3>
+              <p class="text-[#666] landing-[1.6] m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente temporibus, blanditiis nesciunt officia provident porro
+                nisi dolore tempore deserunt quam eius pariatur sequi illo
+                necessitatibus aspernatur doloremque atque natus consequuntur.
+              </p>
+            </div>
+          </div>
+          <div class="clear-both"></div>
+          <div class="right float-right relative">
+            <div class="content p-[20px] bg-white relative">
+              <h3 class="font-bold text-(--main-color) mb-[10px]">
+                Testing Heading
+              </h3>
+              <p class="text-[#666] landing-[1.6] m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente temporibus, blanditiis nesciunt officia provident porro
+                nisi dolore tempore deserunt quam eius pariatur sequi illo
+                necessitatibus aspernatur doloremque atque natus consequuntur.
+              </p>
+            </div>
+          </div>
+          <div class="clear-both"></div>
+
+          <div
+            class="year my-[20px] mx-auto w-[50px] bg-(--main-color) text-center relative z-2 text-white rounded-sm py-[2px] px-[5px] font-bold"
+          >
+            2024
+          </div>
+          <div class="left float-left relative">
+            <div class="content p-[20px] bg-white relative">
+              <h3 class="font-bold text-(--main-color) mb-[10px]">
+                Testing Heading
+              </h3>
+              <p class="text-[#666] landing-[1.6] m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente temporibus, blanditiis nesciunt officia provident porro
+                nisi dolore tempore deserunt quam eius pariatur sequi illo
+                necessitatibus aspernatur doloremque atque natus consequuntur.
+              </p>
+            </div>
+          </div>
+          <div class="clear-both"></div>
+          <div class="right float-right relative">
+            <div class="content p-[20px] bg-white relative">
+              <h3 class="font-bold text-(--main-color) mb-[10px]">
+                Testing Heading
+              </h3>
+              <p class="text-[#666] landing-[1.6] m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente temporibus, blanditiis nesciunt officia provident porro
+                nisi dolore tempore deserunt quam eius pariatur sequi illo
+                necessitatibus aspernatur doloremque atque natus consequuntur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- features -->
+    <div class="features">
+      <div class="container mx-auto py-15">
+        <h2 class="text-center text-(--main-color) font-bold text-[30px] mb-15">
+          Our Features
+        </h2>
+        <div
+          class="features-content flex flex-col sm:flex-row flex-wrap text-center items-center justify-center"
+        >
+          <div
+            class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
+          >
+            <img src="/image/001.png" alt="" />
+            <h4>Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, voluptatum.
+            </p>
+          </div>
+          <div
+            class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
+          >
+            <img src="/image/001.png" alt="" />
+            <h4>Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, voluptatum.
+            </p>
+          </div>
+          <div
+            class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
+          >
+            <img src="/image/001.png" alt="" />
+            <h4>Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, voluptatum.
+            </p>
+          </div>
+          <div
+            class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
+          >
+            <img src="/image/001.png" alt="" />
+            <h4>Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, voluptatum.
+            </p>
+          </div>
+          <div
+            class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
+          >
+            <img src="/image/001.png" alt="" />
+            <h4>Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, voluptatum.
+            </p>
+          </div>
+          <div
+            class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
+          >
+            <img src="/image/001.png" alt="" />
+            <h4>Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, voluptatum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonials -->
+    <div class="testimonials py-10 px-3 relative">
+      <div class="container mx-auto">
+        <h2 class="text-left text-white font-bold text-[30px] mb-10">
+          Testimonials
+        </h2>
+        <div
+          class="ts-content relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2"
+        >
+          <div class="person">
+            <p
+              class="mb-5 text-center text-[17px] md:text-[13px] lg:text-[17px]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              consequuntur illum deserunt. Odit ducimus, architecto rerum
+              suscipit fugit molestias assumenda animi.
+            </p>
+            <div class="info flex gap-3 items-center">
+              <img src="image/001.png" alt="" />
+              <div class="text">
+                <h4>Ahmed Hany</h4>
+                <p>CEO At Company</p>
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <p
+              class="mb-5 text-center text-[17px] md:text-[13px] lg:text-[17px]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              consequuntur illum deserunt. Odit ducimus, architecto rerum
+              suscipit fugit molestias assumenda animi.
+            </p>
+            <div class="info flex gap-3 items-center">
+              <img src="image/001.png" alt="" />
+              <div class="text">
+                <h4>Ahmed Hany</h4>
+                <p>CEO At Company</p>
+              </div>
+            </div>
+          </div>
+          <div class="person">
+            <p
+              class="mb-5 text-center text-[17px] md:text-[13px] lg:text-[17px]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              consequuntur illum deserunt. Odit ducimus, architecto rerum
+              suscipit fugit molestias assumenda animi.
+            </p>
+            <div class="info flex gap-3 items-center">
+              <img src="image/001.png" alt="" />
+              <div class="text">
+                <h4>Ahmed Hany</h4>
+                <p>CEO At Company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
   </body>

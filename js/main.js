@@ -112,3 +112,61 @@ window.onscroll = function () {
     });
   }
 };
+
+// gallery ------------------------------------------------------------
+let gallery = document.querySelectorAll(".gallery .images-container img");
+
+gallery.forEach((img) => {
+  img.addEventListener("click", (e) => {
+    let overlay = document.createElement("div");
+    overlay.className = "popup-overlay";
+    document.body.appendChild(overlay);
+
+    let popupBox = document.createElement("div");
+    popupBox.className = "popup-box";
+    document.body.appendChild(popupBox);
+
+    if (img.alt !== null) {
+      let imgHeading = document.createElement("h3");
+      imgHeading.className = "popup-heading";
+      let imgText = document.createTextNode(img.alt);
+      imgHeading.appendChild(imgText);
+      popupBox.appendChild(imgHeading);
+    }
+
+    let popupImage = document.createElement("img");
+    popupImage.src = img.src;
+    popupBox.appendChild(popupImage);
+
+    let closeButton = document.createElement("span");
+    closeButton.className = "close-button";
+    let closeButtonText = document.createTextNode("X");
+    closeButton.appendChild(closeButtonText);
+    popupBox.appendChild(closeButton);
+  });
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target.className === "close-button") {
+    e.target.parentNode.remove();
+    document.querySelector(".popup-overlay").remove();
+  }
+});
+
+// bullets --------------------------------------------------------------
+// links ----------------------------------------------------------------
+let allBullets = document.querySelectorAll(".bullets .bullet");
+let allLinks = document.querySelectorAll(".links a");
+
+function intoView(element) {
+  element.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      document.querySelector(e.target.dataset.section).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+}
+
+intoView(allBullets);
+intoView(allLinks);
