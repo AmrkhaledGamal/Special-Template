@@ -26,30 +26,53 @@
           <ul
             class="colors-list text-center p-0 m-0 flex flex-row justify-center gap-2"
           >
-            <li class="active-color bg-[#0FC2C0]" data-color="#0FC2C0"></li>
+            <li class="active bg-[#0FC2C0]" data-color="#0FC2C0"></li>
             <li class="bg-[#0CABA8]" data-color="#0CABA8"></li>
             <li class="bg-[#008F8C]" data-color="#008F8C"></li>
             <li class="bg-[#015958]" data-color="#015958"></li>
-            <li class="bg-[#0BE07C]" data-color="#0BE07C"></li>
+            <li class="bg-[#00CEEB]" data-color="#00CEEB"></li>
           </ul>
         </div>
         <div class="settings-bg px-4 py-5 text-center bg-gray-200 mt-2">
           <h4 class="mb-5 font-bold">Random Backgrounds</h4>
           <div class="random-bg">
             <span
-              class="active-bg bg-[#015958] text-white px-3 py-1 rounded-md opacity-50 w-15 inline-block cursor-pointer"
+              class="active bg-(--main-color) text-white px-3 py-1 rounded-md opacity-50 w-15 inline-block cursor-pointer"
               data-background="yes"
               >Yes</span
             >
             <span
-              class="bg-[#015958] text-white px-3 py-1 rounded-md opacity-50 w-15 inline-block cursor-pointer"
+              class="bg-(--main-color) text-white px-3 py-1 rounded-md opacity-50 w-15 inline-block cursor-pointer"
               data-background="no"
               >No</span
             >
           </div>
         </div>
+        <div class="settings-bullets px-4 py-5 text-center bg-gray-200 mt-2">
+          <h4 class="mb-5 font-bold">Show Bullets</h4>
+          <div class="bullets-option">
+            <span
+              class="active bg-(--main-color) text-white px-3 py-1 rounded-md opacity-50 w-15 inline-block cursor-pointer"
+              data-display="show"
+              >Yes</span
+            >
+            <span
+              class="bg-(--main-color) text-white px-3 py-1 rounded-md opacity-50 w-15 inline-block cursor-pointer"
+              data-display="hidden"
+              >No</span
+            >
+          </div>
+        </div>
+        <div class="reset-option px-4 py-5 text-center bg-gray-200 mt-2">
+          <button
+            class="bg-(--main-color) text-white px-3 py-2 rounded-md w-[120px] cursor-pointer opacity-50 hover:opacity-100 transition-all duration-300"
+          >
+            Reset option
+          </button>
+        </div>
       </div>
     </div>
+
     <!-- bullets -->
     <div class="bullets fixed right-[30px] top-1/2 flex flex-col gap-4 z-500">
       <div class="bullet" data-section=".about-section">
@@ -78,12 +101,17 @@
         class="overlay w-full h-full absolute top-0 left-0 bg-black/50 z-1"
       ></div>
       <nav
-        class="container mx-auto relative z-2 text-white flex justify-between items-center"
+        class="container mx-auto relative z-3 text-white flex justify-between items-center"
       >
         <div class="logo p-4 w-xs font-bold">
           <a href="/">Special Design</a>
         </div>
-        <ul class="links flex flex-col sm:flex-row gap-5 p-4">
+        <div
+          class="toggle-menu relative block md:hidden cursor-pointer mx-8 text-[20px] hover:text-(--main-color) transition-all duration-300"
+        >
+          <span><i class="fa-solid fa-bars-staggered"></i></span>
+        </div>
+        <ul class="links hidden md:flex flex-col md:flex-row gap-[25px] p-4">
           <li><a href="#" data-section=".about-section">About</a></li>
           <li><a href="#" data-section=".skills-section">Skills</a></li>
           <li><a href="#" data-section=".gallery">Gallery</a></li>
@@ -301,7 +329,7 @@
           <div
             class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
           >
-            <img src="/image/001.png" alt="" />
+            <img src="/image/Icon_01.png" alt="" />
             <h4>Development</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -311,7 +339,7 @@
           <div
             class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
           >
-            <img src="/image/001.png" alt="" />
+            <img src="/image/Icon_02.png" alt="" />
             <h4>Development</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -321,7 +349,7 @@
           <div
             class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
           >
-            <img src="/image/001.png" alt="" />
+            <img src="/image/Icon_03.png" alt="" />
             <h4>Development</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -331,7 +359,7 @@
           <div
             class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
           >
-            <img src="/image/001.png" alt="" />
+            <img src="/image/Icon_04.png" alt="" />
             <h4>Development</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -341,7 +369,7 @@
           <div
             class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
           >
-            <img src="/image/001.png" alt="" />
+            <img src="/image/Icon_05.png" alt="" />
             <h4>Development</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -351,7 +379,7 @@
           <div
             class="feat-box w-[350px] sm:w-[300px] lg:w-[320px] xl:w-[410px] 2xl:w-[450px]"
           >
-            <img src="/image/001.png" alt="" />
+            <img src="/image/Icon_06.png" alt="" />
             <h4>Development</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -420,6 +448,60 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- contact us -->
+    <div class="contact-us bg-[url(/image/contact.png)] object-cover relative">
+      <div
+        class="overlay top-0 left-0 absolute w-full h-full bg-[#0000001a]"
+      ></div>
+      <div class="container mx-auto py-15 relative z-2">
+        <h2 class="text-center text-(--main-color) font-bold text-[30px] mb-15">
+          Contact us
+        </h2>
+        <form class="flex flex-col sm:flex-row gap-3">
+          <div class="left flex flex-col items-center flex-1 gap-3 px-8 pt-8">
+            <input
+              type="text"
+              class="input"
+              placeholder="Your Name"
+              name="name"
+              id="name"
+            />
+            <input
+              type="email"
+              class="input"
+              placeholder="Your Email"
+              name="email"
+              id="email"
+            />
+            <input
+              type="tel"
+              class="input"
+              placeholder="Phone"
+              name="phone"
+              id="phone"
+            />
+            <input
+              type="text"
+              class="input"
+              placeholder="Subject"
+              name="Subject"
+              id="Subject"
+            />
+          </div>
+          <div
+            class="right flex flex-col items-center flex-1 gap-3 px-8 sm:pt-8"
+          >
+            <textarea placeholder="Your Message" name="message"></textarea>
+            <input
+              type="submit"
+              value="Send Message"
+              class="w-full h-[40px] mx-auto bg-(--main-color) text-white rounded-lg cursor-pointer"
+            />
+          </div>
+        </form>
       </div>
     </div>
 
